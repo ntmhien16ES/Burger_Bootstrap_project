@@ -1,0 +1,26 @@
+.btn {
+    padding: 1.2rem 3.5rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    transition: .3 ease-in;
+    border-radius: $border-radius;
+    cursor: pointer;
+}
+.btn-yellow {
+    color: #212529;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    &:hover {
+        background-color: #faa00c;
+        border-color: #f59a05;
+    }
+}
+.btn-outline-yellow {
+    color: $primary-color;
+    background-color: transparent;
+    border-color: $primary-color;
+    &:hover {
+        background-color: $primary-color;
+    }
+}

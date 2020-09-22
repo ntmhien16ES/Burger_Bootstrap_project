@@ -1,0 +1,28 @@
+mixin products__item(srcImg, title, desc)
+    .products__item
+        img(src= srcImg, alt="")
+        h4= title
+        p= desc
+        a(href="#") View all
+
+mixin infor__item-content(classIcon, title, desc)
+    .row.infor__item-content
+        .col-2
+            i(class= classIcon)
+        .col-10
+            h6= title
+            p= desc
+
+mixin gallery__item(srcImg)
+    .col-12.col-sm-6.col-lg-3.gallery__item
+        img(src= srcImg, alt="")
+        .gallery__overlay
+            .gallery__overlay-content
+                i.fa.fa-plus
+                h4 Delight your Best
+
+mixin reasons__item(iconClass,title,desc)
+    .col-12.col-sm-6.col-lg-3.reasons__item
+        i(class= iconClass)
+        h4= title
+        p= desc

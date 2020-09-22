@@ -1,0 +1,47 @@
+.header {
+    .navbar {
+        .header__logo {
+            color: $heading-color;
+            font-size: 3.2rem;
+            font-weight: 700;
+            text-transform: capitalize;
+    
+            img {
+                width: 3.5rem;
+                margin-right: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+        .header__menu {
+            li {
+                align-self: center;
+                padding: 0 1.2rem;
+                a {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: $heading-color;
+                    opacity: .95;
+                    letter-spacing: .85px;
+                }
+            }
+            .active {
+                .nav-link {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .navbar-light {
+        .navbar-toggler {
+            background-color: $primary-color;
+            padding: .6rem 1rem;
+            i {
+                color: white;
+                font-size: 2rem;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.reasons {
+    padding-top: 9.6rem;
+    padding-bottom: 9.6rem;
+    background-color: $bg-grey;
+    text-align: center;
+    .reasons__content {
+        .reasons__item {
+            padding-top: 7.2rem;
+            i {
+                color: $primary-color;
+                font-size: 4rem;
+            }
+            h4 {
+                font-size: 3rem;
+                color: $heading-color;
+                font-weight: 700;
+                line-height: 3rem;
+                margin: 3.5rem 0 1.5rem;
+            }
+            p {
+                color: $font-color;
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                letter-spacing: .5px;
+            }
+        }
+    }
+    @include responsive('extra-large') {
+        padding-top: 7.2rem;
+        padding-bottom: 7.2rem;
+    }
+    @include responsive('large') {
+        padding-top: 4.8rem;
+        padding-bottom: 4.8rem;
+        .reasons__content {
+            .reasons__item {
+                padding-top: 4.8rem;
+            }
+        }
+    }
+    @include responsive('medium') {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}

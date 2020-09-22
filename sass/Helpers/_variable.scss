@@ -1,0 +1,25 @@
+$primary-color: #fbaf32;
+$secondary-color: #3B3663;
+$font-color: #696687;
+$bg-color: #fff;
+$heading-color: #3B3663;
+
+$border-radius: 6px;
+$border-radius-full: 15px;
+$border-color: transparent;
+$border-color-light: #ebebeb;
+
+$iframe-filter: grayscale(0%);
+
+$bg-grey: #f4f4f4;
+$bg-lightgrey: #f8f9fa;
+$btn-bg: #e2e8f0;
+
+//break points
+$breakpoints:(
+    'extra-large':1200px,
+    'small-large': 1035px,
+    'large':992px,
+    'medium':768px,
+    'small':576px,
+)

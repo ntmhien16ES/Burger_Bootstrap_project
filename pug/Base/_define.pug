@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        // FONT AWESOME
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css")
+        // FONT GOOGLE
+        link(rel="stylesheet", href="//fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap")
+        // Boostrap css
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+        // Main css
+        link(rel="stylesheet", href="../css/main.css")
+    body
+        //- HELPERS
+        include ../Helpers/_variable.pug
+        include ../Helpers/_mixin.pug
+        
+        block content
+
+        // Boostrap js
+        script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
