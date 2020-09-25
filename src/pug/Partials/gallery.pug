@@ -1,0 +1,10 @@
+section.gallery
+    .container
+        .gallery__title
+            h6 Food Gallery
+            h3 Our Burger Gallery
+        .gallery__content
+            .row
+                each val in gallery__item
+                    +gallery__item(val.src, val.alt)
+                

@@ -1,0 +1,8 @@
+section.reasons
+    .container
+        .reasons__title
+            h6.title__small Why we are the best
+            h3.title__big 4 Reasons to Choose us
+        .reasons__content.row
+            each val in reasons__item
+                +reasons__item(val.icon, val.title, val.desc)

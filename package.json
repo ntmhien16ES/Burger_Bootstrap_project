@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass --watch ./sass/main.scss ./css/main.css",
-    "pug": "pug -w ./pug/Pages/ -o ./ -P",
+    "scss": "sass --watch ./src/sass/main.scss ./assets/css/main.css",
+    "pug": "pug -w ./src/pug/Pages/ -o ./ -P",
     "start": "npm-run-all -p -r scss pug"
   },
   "author": "Hien Nguyen",

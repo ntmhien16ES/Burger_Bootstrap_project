@@ -13,9 +13,9 @@ mixin infor__item-content(classIcon, title, desc)
             h6= title
             p= desc
 
-mixin gallery__item(srcImg)
+mixin gallery__item(srcImg, alt)
     .col-12.col-sm-6.col-lg-3.gallery__item
-        img(src= srcImg, alt="")
+        img(src= srcImg, alt= alt)
         .gallery__overlay
             .gallery__overlay-content
                 i.fa.fa-plus
@@ -26,3 +26,8 @@ mixin reasons__item(iconClass,title,desc)
         i(class= iconClass)
         h4= title
         p= desc
+
+mixin contact__item(title, desc)
+    p
+        strong= title 
+        = desc

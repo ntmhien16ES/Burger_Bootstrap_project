@@ -4,31 +4,21 @@ footer.footer
             .row
                 .col-12.col-lg-4.footer__media
                     h3
-                        img(src="../images/burger.png", alt="")
+                        img(src="./assets/images/burger.png", alt="")
                         | Burger Bun
                     p We are dedicated to the safety of our guests and employees and have updated our safety measures. We believe in Simple, Creative, Modern and Flexible Design Standards with a Retina and Responsive Approach. Browse the amazing Features this template offers.
                     h5 Follow us:
-                        i.fab.fa-facebook-f
-                        i.fab.fa-twitter
-                        i.fab.fa-google-plus-g
-                        i.fab.fa-dribbble
+                        each val in footer__media
+                            a(href= val.link)
+                                i(class= val.icon)
                 .col-12.col-md-6.col-lg-4.footer__contact
                     h3 Contact Us
-                    p
-                        strong Address: 
-                        |Burger Bun, 208 Trainer Avenue street, Corner Market, NY - 62617.
-                    p
-                        strong Phone: 
-                        |+12 534894364
-                    p
-                        strong Email: 
-                        |info@example.com
+                        each val in footer__contact
+                            +contact__item(val.title, val.desc)
                     h3 Payments we accept
                     .footer__pay
-                        img(src="./images/pay2.png", alt="")
-                        img(src="./images/pay5.png", alt="")
-                        img(src="./images/pay1.png", alt="")
-                        img(src="./images/pay4.png", alt="")
+                        each val in footer__pay
+                            img(src= val.src, alt= val.alt)
                 .col-12.col-md-6.col-lg-4.footer__subscribe 
                     h3 Subscribe Newsletter
                     p Enter your email and receive the latest news, updates and special offers from us.
