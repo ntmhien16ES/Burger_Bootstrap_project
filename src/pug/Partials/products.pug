@@ -1,9 +1,10 @@
 section.products
     .container
         .row
-            .col-lg-4.col-12
-                +products__item(products__item[0].src, products__item[0].title, products__item[0].desc)
-            .col-lg-4.col-12.my-lg-0.my-sm-5.my-4
-                +products__item(products__item[0].src, products__item[0].title, products__item[0].desc)
-            .col-lg-4.col-12
-                +products__item(products__item[0].src, products__item[0].title, products__item[0].desc)
+            each item, index in products_item
+                if index == 1
+                    .col-lg-4.col-12.my-lg-0.my-sm-5.my-4
+                        +products_item(item.src, item.title, item.desc, item.alt)
+                else
+                    .col-lg-4.col-12
+                        +products_item(item.src, item.title, item.desc, item.alt)

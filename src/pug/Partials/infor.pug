@@ -2,10 +2,10 @@ section.infor
     .container
         .row
             .col-12.col-lg-4.infor__item
-                each val in infor__item__left
+                each val in infor_item_left
                     +infor__item-content(val.icon, val.title, val.desc)
             .col-12.col-lg-4.infor__item
-                img(src="./assets/images/burger1.png", alt="")
+                img(src= infor_img.src, alt= infor_img.alt)
             .col-12.col-lg-4.infor__item
-                each val in infor__item__right
+                each val in infor_item_right
                     +infor__item-content(val.icon, val.title, val.desc)

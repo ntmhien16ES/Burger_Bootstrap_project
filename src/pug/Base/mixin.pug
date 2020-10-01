@@ -1,6 +1,19 @@
-mixin products__item(srcImg, title, desc)
+mixin logo(title, src, alt, link)
+    a(href= link, class="logo")
+        img(src= src, alt= alt)
+        = title
+
+mixin section_title(sub_title, big_title, desc, highline)
+    h5.title__small= sub_title
+    h3.title__big= big_title
+        if highline != ""
+            span= highline
+    if desc != ""
+        p= desc
+
+mixin products_item(srcImg, title, desc, alt)
     .products__item
-        img(src= srcImg, alt="")
+        img(src= srcImg, alt= alt)
         h4= title
         p= desc
         a(href="#") View all

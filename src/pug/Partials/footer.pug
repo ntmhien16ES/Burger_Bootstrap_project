@@ -4,27 +4,27 @@ footer.footer
             .row
                 .col-12.col-lg-4.footer__media
                     h3
-                        img(src="./assets/images/burger.png", alt="")
-                        | Burger Bun
-                    p We are dedicated to the safety of our guests and employees and have updated our safety measures. We believe in Simple, Creative, Modern and Flexible Design Standards with a Retina and Responsive Approach. Browse the amazing Features this template offers.
+                        +logo(logo.title, logo.src, logo.alt, logo.link)
+                    p= footer_media_content
                     h5 Follow us:
-                        each val in footer__media
+                        each val in footer_media
                             a(href= val.link)
                                 i(class= val.icon)
                 .col-12.col-md-6.col-lg-4.footer__contact
                     h3 Contact Us
-                        each val in footer__contact
+                        each val in footer_contact
                             +contact__item(val.title, val.desc)
                     h3 Payments we accept
                     .footer__pay
-                        each val in footer__pay
+                        each val in footer_pay
                             img(src= val.src, alt= val.alt)
                 .col-12.col-md-6.col-lg-4.footer__subscribe 
-                    h3 Subscribe Newsletter
-                    p Enter your email and receive the latest news, updates and special offers from us.
-                    input(type="email", placeholder= "Email")
-                    button.btn.btn-yellow Subscribe
-                    h3 Subscribe & Get $10 on Your First Order
+                    h3= footer_subcribe.title
+                    p= footer_subcribe.desc
+                    form(action="#", method="post")
+                        input(type="email", placeholder= "Email")
+                        button(type="submit" class="btn btn-yellow")= footer_subcribe.button
+                    h3= footer_subcribe.sub_title
     .footer__bottom
         .container
             p © 2020 Burger Bun. All rights reserved | Design by 

@@ -1,9 +1,8 @@
 header.header
     div(class="navbar navbar-expand-lg navbar-light bg-white fixed-top")
         .container
-            h1.navbar-brand.header__logo
-                img(src="./assets/images/burger.png", alt="")
-                | Burger Bun
+            h1.navbar-brand
+                +logo(logo.title, logo.src, logo.alt, logo.link)
             
             button(class="navbar-toggler d-lg-none", type="button", data-toggle="collapse", data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false", aria-label="Toggle navigation")
@@ -11,9 +10,8 @@ header.header
             
             div(class="collapse navbar-collapse", id="collapsibleNavId")
                 ul(class="navbar-nav ml-auto mt-2 mt-lg-0 header__menu")
-                    each val in menu__list
+                    each val in menu_list
                         li
                           a(href= val.link, class= val.status)= val.title
                     li.nav-item
-                          i.fa.fa-search  
-        
+                          i.fa.fa-search 

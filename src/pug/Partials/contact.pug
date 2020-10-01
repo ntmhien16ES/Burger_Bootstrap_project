@@ -1,9 +1,9 @@
 section.contact
     .container
         .contact__content
-            h3 The Right Ingredients for the Right Food. Eat Healthy, Delicious and Perfect Burgers From Our Hotel
-            h3 Call us to order: 
-                span +1 123 456 789
+            h3= contact_content.title_top
+            h3= contact_content.title_bottom
+                span= contact_content.phone
             .contact__btn
-                button.btn.btn-yellow Contact Us
-                button.btn.btn-outline-yellow Book a table
+                button.btn.btn-yellow= contact_btn.yellow
+                button.btn.btn-outline-yellow= contact_btn.outline_yellow

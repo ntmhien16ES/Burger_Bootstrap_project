@@ -1,7 +1,7 @@
 .download {
     padding-top: 9.6rem;
     padding-bottom: 9.6rem;
-    .download__item-left {
+    &__item-left {
         p {
             font-size: 1.8rem;
             color: $font-color;
@@ -50,6 +50,9 @@
                     border-top-left-radius: $border-radius;
                     border-bottom-left-radius: $border-radius;
                     margin-right: -1px;
+                    &:focus {
+                        outline: none !important;
+                    }
                 }
                 button {
                     width: 15rem;
@@ -65,7 +68,7 @@
         }
         
     }
-    .download__item-right {
+    &__item-right {
         img {
             border-radius: $border-radius-full;
         }
@@ -77,14 +80,14 @@
     @include responsive('large') {
         padding-top: 4.8rem;
         padding-bottom: 4.8rem;
-        .download__item-right {
+        &__item-right {
             margin-top: 4.8rem;
         }
     }
     @include responsive('medium') {
         padding-top: 4rem;
         padding-bottom: 4rem;
-        .download__item-right {
+        &__item-right {
             margin-top: 3rem;
         }
     }

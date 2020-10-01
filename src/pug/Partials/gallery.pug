@@ -1,10 +1,22 @@
 section.gallery
     .container
         .gallery__title
-            h6 Food Gallery
-            h3 Our Burger Gallery
+            +section_title(section_title.gallery.sub_title,section_title.gallery.big_title,section_title.gallery.desc,section_title.gallery.highline)
         .gallery__content
-            .row
-                each val in gallery__item
-                    +gallery__item(val.src, val.alt)
+            div(class="carousel slide", id="gallery_carousel",data-ride="carousel")
+                .carousel-inner
+                    .carousel-item.active
+                        .row
+                            each val in gallery__item
+                                +gallery__item(val.src, val.alt)
+                    .carousel-item
+                        .row
+                            each val in gallery__item
+                                +gallery__item(val.src, val.alt)
+                a(href="#gallery_carousel", class="carousel-control-prev",role="button",data-slide="prev")
+                    i.fa.fa-angle-left
+                    span.sr-only Previous
+                a(href="#gallery_carousel", class="carousel-control-next",role="button",data-slide="next")
+                    i.fa.fa-angle-right
+                    span.sr-only Next
                 
