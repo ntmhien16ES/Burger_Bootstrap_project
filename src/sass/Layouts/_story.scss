@@ -8,8 +8,7 @@
         padding: 0 10px 0 0;
         button {
             span {
-                font-size: 50px;
-                line-height: 19px;
+                @include text(inherit, 50px, 19px);
             }
             &:focus {
                 outline: none !important;
@@ -19,8 +18,7 @@
     .modal-body {
         padding: 0;
         iframe {
-            width: 100%;
-            height: 400px;
+            @include size(100%, 400px);
         }
     }
     &__item-left {
@@ -31,16 +29,12 @@
         button.play__btn {
             background-color: transparent;
             border: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
+            @include centerAbsolute(both);
             &:focus {
                 outline: none !important;
             }
-            transform: translate(-50%,-50%);
             i {
-                font-size: 3rem;
-                color: transparent;
+                @include text(transparent, 3rem);
                 -webkit-text-stroke-width: 4px;
                 -webkit-text-stroke-color: #fff;
                 padding: 2rem 1.7rem 2rem 2.3rem;
@@ -56,9 +50,7 @@
             }
         }
         p {
-            font-size: 1.8rem;
-            line-height: 2.8rem;
-            color: $font-color;
+            @include text($font-color, 1.8rem, 2.8rem);
             letter-spacing: .5px;
             margin-top: 2.4rem;
         }

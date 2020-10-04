@@ -61,10 +61,10 @@ html {
 
 body {
   font-family: "Dosis", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
   color: #696687;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 400;
   background: #fff;
 }
 
@@ -114,9 +114,9 @@ img {
   padding: 0 1.2rem;
 }
 .header .navbar .header__menu li a {
+  color: #3B3663;
   font-size: 2rem;
   font-weight: 600;
-  color: #3B3663;
   opacity: 0.95;
   letter-spacing: 0.85px;
 }
@@ -144,8 +144,8 @@ img {
   color: #f3f3f3;
 }
 .footer__top h3 {
-  font-size: 2.4rem;
   color: #f3f3f3;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 2.4rem;
 }
@@ -153,18 +153,18 @@ img {
   margin-bottom: 0;
 }
 .footer__top p {
-  font-size: 1.8rem;
   color: #aaa;
-  margin: 1rem 0;
+  font-size: 1.8rem;
   font-weight: 300;
+  margin: 1rem 0;
 }
 .footer__top p strong {
   font-weight: 700;
 }
 .footer__top .footer__media h3 {
+  color: white;
   font-size: 3rem;
   font-weight: 700;
-  color: white;
 }
 .footer__top .footer__media h3 img {
   width: 3.5rem;
@@ -172,23 +172,23 @@ img {
   padding-bottom: 5px;
 }
 .footer__top .footer__media p {
-  font-size: 1.8rem;
   color: #aaa;
+  font-size: 1.8rem;
 }
 .footer__top .footer__media h5 {
-  font-size: 1.8rem;
   color: #aaa;
+  font-size: 1.8rem;
 }
 .footer__top .footer__media h5 i {
   display: inline-block;
   width: 3rem;
   height: 3rem;
+  color: white;
   font-size: 1.4rem;
-  text-align: center;
   line-height: 3rem;
+  text-align: center;
   border-radius: 50%;
   margin-left: 1rem;
-  color: white;
 }
 .footer__top .footer__media h5 i:hover {
   cursor: pointer;
@@ -215,25 +215,27 @@ img {
   cursor: pointer;
 }
 .footer__top .footer__subscribe {
+  color: inherit;
   font-size: 1.8rem;
   font-weight: 600;
 }
 .footer__top .footer__subscribe input {
   width: 100%;
   height: 5rem;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
   padding: 1rem 2rem;
   border: none;
   outline: none;
-  color: #333333;
   letter-spacing: 0.5px;
   border-radius: 0.5rem;
-  font-size: 1.8rem;
-  font-weight: 600;
   margin-bottom: 0.8rem;
 }
 .footer__top .footer__subscribe button {
   width: 100%;
   height: 5rem;
+  color: inherit;
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 2.4rem;
@@ -259,8 +261,8 @@ img {
   padding: 1.5rem 0;
 }
 .footer__bottom p {
-  font-size: 1.8rem;
   color: #aaa;
+  font-size: 1.8rem;
 }
 .footer__bottom p a {
   color: white;
@@ -272,10 +274,11 @@ img {
 }
 
 .btn {
-  padding: 1.2rem 3.5rem;
+  color: inherit;
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 700;
+  padding: 1.2rem 3.5rem;
   transition: 0.3 ease-in;
   border-radius: 6px;
   cursor: pointer;
@@ -301,11 +304,11 @@ img {
 }
 
 .title__small {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 3rem;
-  letter-spacing: 1px;
   color: #696687;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
   display: block;
 }
 
@@ -329,8 +332,8 @@ img {
   box-shadow: rgba(8, 7, 8, 0.3) 0px 0px 7px 2px;
 }
 .carousel .carousel-control-next i, .carousel .carousel-control-prev i {
-  font-size: 40px;
   color: #3B3663;
+  font-size: 40px;
   line-height: 5rem;
 }
 .carousel .carousel-control-next {
@@ -372,16 +375,16 @@ img {
 }
 .banner__content h2 {
   color: transparent;
+  font-size: 12rem;
+  line-height: 11rem;
+  font-weight: 800;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
-  font-size: 12rem;
-  font-weight: 800;
-  line-height: 11rem;
   padding: 3rem 0;
 }
 .banner__content p {
+  color: white;
   font-size: 1.8rem;
-  color: #eee;
   line-height: 2.8rem;
   letter-spacing: 0.5px;
   margin-bottom: 3rem;
@@ -430,6 +433,7 @@ img {
   padding: 0 10px 0 0;
 }
 .story .modal-header button span {
+  color: inherit;
   font-size: 50px;
   line-height: 19px;
 }
@@ -455,14 +459,16 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .story__item-left button.play__btn:focus {
   outline: none !important;
 }
 .story__item-left button.play__btn i {
-  font-size: 3rem;
   color: transparent;
+  font-size: 3rem;
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: #fff;
   padding: 2rem 1.7rem 2rem 2.3rem;
@@ -473,9 +479,9 @@ img {
   color: #fbaf32;
 }
 .story__item-right p {
+  color: #696687;
   font-size: 1.8rem;
   line-height: 2.8rem;
-  color: #696687;
   letter-spacing: 0.5px;
   margin-top: 2.4rem;
 }
@@ -513,6 +519,8 @@ img {
   transition: 0.3s ease-in;
 }
 .products__item:hover {
+  -webkit-transform: translateY(-0.25rem);
+  -ms-transform: translateY(-0.25rem);
   transform: translateY(-0.25rem);
   box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
 }
@@ -520,22 +528,22 @@ img {
   width: 3.5rem;
 }
 .products__item h4 {
+  color: #3B3663;
   font-size: 3rem;
   font-weight: 700;
   margin: 2.5rem 0 1.5rem;
-  color: #3B3663;
 }
 .products__item p {
+  color: #696687;
   font-size: 2rem;
   line-height: 2.8rem;
-  color: #696687;
   letter-spacing: 0.5px;
   margin-bottom: 1.6rem;
 }
 .products__item a {
+  color: #3B3663;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #3B3663;
 }
 @media screen and (max-width: 1200px) {
   .products {
@@ -564,20 +572,20 @@ img {
   margin-bottom: 4.8rem;
 }
 .infor__item-content i {
-  font-size: 3rem;
   color: #fbaf32;
+  font-size: 3rem;
 }
 .infor__item-content h6 {
+  color: #3B3663;
   font-size: 3rem;
   line-height: 3rem;
   font-weight: 700;
-  color: #3B3663;
   margin-bottom: 1rem;
 }
 .infor__item-content p {
+  color: #696687;
   font-size: 2rem;
   line-height: 2.8rem;
-  color: #696687;
   letter-spacing: 0.5px;
 }
 .infor__item-content:last-child {
@@ -624,10 +632,10 @@ img {
   z-index: -1;
 }
 .contact__content h3 {
+  color: white;
   font-size: 4.5rem;
   line-height: 5rem;
   font-weight: 700;
-  color: white;
 }
 .contact__content h3 span {
   color: #fbaf32;
@@ -681,17 +689,17 @@ img {
   margin-bottom: 4.8rem;
 }
 .gallery__title h6 {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 3rem;
-  letter-spacing: 1px;
   color: #696687;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .gallery__title h3 {
+  color: #3B3663;
   font-size: 4rem;
   line-height: 4.6rem;
   font-weight: 700;
-  color: #3B3663;
 }
 .gallery__content .row {
   margin: 0;
@@ -722,16 +730,20 @@ img {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   transition: 0.3s ease-in;
 }
 .gallery__overlay-content {
+  -webkit-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
   transform: translateY(-30%);
   transition: 0.3s ease-in;
   color: white;
 }
 .gallery__overlay-content h4 {
+  color: inherit;
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -768,10 +780,10 @@ img {
   font-size: 4rem;
 }
 .reasons__item h4 {
-  font-size: 3rem;
   color: #3B3663;
-  font-weight: 700;
+  font-size: 3rem;
   line-height: 3rem;
+  font-weight: 700;
   margin: 3.5rem 0 1.5rem;
 }
 .reasons__item p {
@@ -807,9 +819,8 @@ img {
   padding-bottom: 9.6rem;
 }
 .download__item-left p {
-  font-size: 1.8rem;
   color: #696687;
-  left: 0.5px;
+  font-size: 1.8rem;
   line-height: 2.8rem;
   margin: 1.6rem 0;
 }
@@ -819,16 +830,16 @@ img {
   padding-right: 1.5rem;
 }
 .download__item-left span {
-  font-size: 2rem;
   display: block;
   width: 4rem;
   height: 4rem;
+  color: #3B3663;
+  font-size: 2rem;
   line-height: 3.6rem;
+  font-weight: 700;
   background-color: #f8f9fa;
   border: 1px solid transparent;
-  font-weight: 700;
   border-radius: 50%;
-  color: #3B3663;
   margin: 2rem 0;
   text-align: center;
 }
@@ -836,19 +847,20 @@ img {
   max-width: 45rem;
 }
 .download__item-left .download__link h5 {
+  color: inherit;
   font-size: 2.2rem;
   line-height: 3rem;
   font-weight: 700;
   margin-bottom: 0.8rem;
 }
 .download__item-left .download__link form input {
+  width: 100%;
   height: 5rem;
+  color: #696687;
   font-size: 1.8rem;
   line-height: 2.8rem;
   padding: 1.2rem 1.5rem;
-  width: 100%;
   border: 1px solid #ddd;
-  color: #696687;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   margin-right: -1px;
@@ -857,12 +869,14 @@ img {
   outline: none !important;
 }
 .download__item-left .download__link form button {
-  width: 15rem;
   display: block;
-  padding: 0;
+  border: none;
+  width: 15rem;
   height: 5rem;
-  border-radius: 0;
+  padding: 0;
+  border-top-left-radius: 0;
   border-top-right-radius: 6px;
+  border-bottom-left-radius: 0;
   border-bottom-right-radius: 6px;
   color: white;
 }

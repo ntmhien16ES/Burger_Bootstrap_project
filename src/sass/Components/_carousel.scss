@@ -4,18 +4,13 @@
         transform: translateY(-50%);
         bottom: auto;
         display: inline-block;
-        width: 5rem;
-        height: 5rem;
-        
+        @include size(5rem);
         opacity: 1;
-        // padding: 1.5rem;
         background-color: white;
         border-radius: 50%;
         box-shadow: rgba(8, 7, 8, 0.3) 0px 0px 7px 2px;
         i {
-            font-size: 40px;
-            color: $secondary-color;
-            line-height: 5rem;
+            @include text($secondary-color, 40px, 5rem);
         }
     }
     .carousel-control-next {

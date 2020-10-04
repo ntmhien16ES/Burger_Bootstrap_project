@@ -20,10 +20,7 @@
     }
     &__content {
         h3 {
-            font-size: 4.5rem;
-            line-height: 5rem;
-            font-weight: 700;
-            color: white;
+            @include text(white, 4.5rem, 5rem, 700);
             span {
                 color: $primary-color;
             }

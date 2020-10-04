@@ -8,10 +8,7 @@ html {
 }
 body {
     font-family: 'Dosis', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: $font-color;
+    @include text($font-color, 1.6rem, 1.5, 400);
     background: $bg-color;
 }
 

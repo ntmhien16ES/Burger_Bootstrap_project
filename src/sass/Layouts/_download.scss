@@ -3,10 +3,7 @@
     padding-bottom: 9.6rem;
     &__item-left {
         p {
-            font-size: 1.8rem;
-            color: $font-color;
-            left: .5px;
-            line-height: 2.8rem;
+            @include text($font-color,1.8rem,2.8rem);
             margin: 1.6rem 0;
         }
         .download__btn {
@@ -17,36 +14,27 @@
             }
         }
         span {
-            font-size: 2rem;
             display: block;
-            width: 4rem;
-            height: 4rem;
-            line-height: 3.6rem;
+            @include size(4rem);
+            @include text($heading-color, 2rem, 3.6rem, 700);
             background-color: $bg-lightgrey;
             border: 1px solid $border-color;
-            font-weight: 700;
             border-radius: 50%;
-            color: $heading-color;
             margin: 2rem 0;
             text-align: center;
         }
         .download__link {
             max-width: 45rem;
             h5 {
-                font-size: 2.2rem;
-                line-height: 3rem;
-                font-weight: 700;
+                @include text(inherit, 2.2rem, 3rem, 700);
                 margin-bottom: .8rem;
             }
             form {
                 input {
-                    height: 5rem;
-                    font-size: 1.8rem;
-                    line-height: 2.8rem;
+                    @include size(100%, 5rem);
+                    @include text($font-color, 1.8rem, 2.8rem);
                     padding: 1.2rem 1.5rem;
-                    width: 100%;
                     border: 1px solid #ddd;
-                    color: $font-color;
                     border-top-left-radius: $border-radius;
                     border-bottom-left-radius: $border-radius;
                     margin-right: -1px;
@@ -55,18 +43,15 @@
                     }
                 }
                 button {
-                    width: 15rem;
                     display: block;
+                    border: none;
+                    @include size(15rem, 5rem);
                     padding: 0;
-                    height: 5rem;
-                    border-radius: 0;
-                    border-top-right-radius: $border-radius;
-                    border-bottom-right-radius: $border-radius;
+                    @include border-radius(0, $border-radius, 0, $border-radius);
                     color: white;
                 }
             }
         }
-        
     }
     &__item-right {
         img {

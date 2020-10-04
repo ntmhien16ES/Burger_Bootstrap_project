@@ -21,24 +21,16 @@
         padding-bottom: 4rem;
         margin-top: 2rem;
         h3 {
-            color: white;
-            font-size: 4.5rem;
-            line-height: 5.5rem;
-            font-weight: 600;
+            @include text(white, 4.5rem, 5.5rem, 600);
         }
         h2 {
-            color: transparent;
+            @include text(transparent, 12rem, 11rem, 800);
             -webkit-text-stroke-width: 2px;
             -webkit-text-stroke-color: white;
-            font-size: 12rem;
-            font-weight: 800;
-            line-height: 11rem;
             padding: 3rem 0;
         }
         p {
-            font-size: 1.8rem;
-            color: #eee;
-            line-height: 2.8rem;
+            @include text(white, 1.8rem, 2.8rem);
             letter-spacing: .5px;
             margin-bottom: 3rem;
         }

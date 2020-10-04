@@ -5,9 +5,7 @@
                 align-self: center;
                 padding: 0 1.2rem;
                 a {
-                    font-size: 2rem;
-                    font-weight: 600;
-                    color: $heading-color;
+                    @include text($heading-color, 2rem, false, 600);
                     opacity: .95;
                     letter-spacing: .85px;
                 }
@@ -24,8 +22,7 @@
             background-color: $primary-color;
             padding: .6rem 1rem;
             i {
-                color: white;
-                font-size: 2rem;
+                @include text(white, 2rem);
             }
             &:focus {
                 outline: none;

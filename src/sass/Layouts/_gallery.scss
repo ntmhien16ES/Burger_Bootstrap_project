@@ -5,17 +5,11 @@
     &__title {
         margin-bottom: 4.8rem;
         h6 {
-            font-size: 2rem;
-            font-weight: 700;
-            line-height: 3rem;
+            @include text($font-color, 2rem, 3rem, 700);
             letter-spacing: 1px;
-            color: $font-color;
         }
         h3 {
-            font-size: 4rem;
-            line-height: 4.6rem;
-            font-weight: 700;
-            color: $heading-color;
+            @include text($heading-color, 4rem, 4.6rem, 700);
         }
     }
     &__content {
@@ -50,17 +44,14 @@
         right: 0;
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: $border-radius-full;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex(row, center, center);
         transition: .3s ease-in;
         &-content{
-            transform: translateY(-30%);
+            @include transform(translateY(-30%));
             transition: .3s ease-in;
             color: white;
             h4 {
-                font-size: 2.5rem;
-                font-weight: 700;
+                @include text(inherit, 2.5rem, false, 700);
             }
         }
     }

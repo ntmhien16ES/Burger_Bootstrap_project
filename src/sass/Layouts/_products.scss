@@ -11,29 +11,23 @@
         box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
         transition: .3s ease-in;
         &:hover {
-            transform: translateY(-0.25rem);
+            @include transform(translateY(-0.25rem));
             box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
         }
         img {
             width: 3.5rem;
         }
         h4 {
-            font-size: 3rem;
-            font-weight: 700;
+            @include text($heading-color, 3rem, false, 700);
             margin: 2.5rem 0 1.5rem;
-            color: $heading-color;
         }
         p {
-            font-size: 2rem;
-            line-height: 2.8rem;
-            color: $font-color;
+            @include text($font-color, 2rem, 2.8rem);
             letter-spacing: .5px;
             margin-bottom: 1.6rem;
         }
         a {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: $heading-color;
+            @include text($heading-color, 2.5rem, false, 700);
         }
     }
     @include responsive('extra-large') {

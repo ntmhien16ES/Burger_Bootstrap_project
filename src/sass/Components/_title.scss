@@ -1,14 +1,8 @@
 .title__small {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 3rem;
+    @include text($font-color, 2rem, 3rem, 700);
     letter-spacing: 1px;
-    color: $font-color;
     display: block;
 }
 .title__big {
-    color: $heading-color;
-    font-size: 4rem;
-    line-height: 4.6rem;
-    font-weight: 700;
+    @include text($heading-color, 4rem, 4.6rem, 700);
 }
